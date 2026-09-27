@@ -16,6 +16,13 @@
     <section class="max-w-6xl mx-auto px-6 py-16">
         <div class="grid md:grid-cols-3 gap-8">
             @foreach ([
+            [
+            'name' => 'Matching Job',
+                    'desc' => 'Layanan konsultasi dan pendampingan untuk membantu calon pekerja menemukan peluang kerja yang sesuai dengan kemampuan dan minat di Jepang.',
+                    'points' => ['Konsultasi pilihan bidang pekerjaan', 'Pencocokan kandidat dengan lowongan kerja', 'Pendampingan proses seleksi dan wawancara'],
+            
+            
+            ]
 
                 [
                     'name' => 'Program Reguler',

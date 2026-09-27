@@ -145,9 +145,9 @@
             <div>
                 <h4 class="font-display font-semibold mb-4">Kontak Kami</h4>
                 <ul class="space-y-3 text-sm text-white/70">
-                    <li>Ruko Larisa Residence, Jl. Golf Raya No. A4, Cisaranten Wetan, Kec. Cinambo, Kota Bandung, Jawa Barat 40293</li>
-                    <li>0851-4747-4858</li>
-                    <li>nipontomokiindonesia@gmail.com</li>
+                    <li>Perum Alana Home Ruby No.7, Ngablak, Kroyo, Kec. Karangmalang, Kabupaten Sragen, Jawa Tengah 57221</li>
+                    <li>0851-8857-4085</li>
+                    <li>Indonesianippontomoki@gmail.com</li>
                 </ul>
             </div>
         </div>

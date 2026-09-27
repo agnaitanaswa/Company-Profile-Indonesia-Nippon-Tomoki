@@ -17,7 +17,7 @@ class Controllers extends Controller
 
     public function __construct()
     {
-        $this->waNumber = config('services.whatsapp.number', '6285147474858');
+        $this->waNumber = config('services.whatsapp.number', '6285188574085');
     }
 
     public function beranda(): View

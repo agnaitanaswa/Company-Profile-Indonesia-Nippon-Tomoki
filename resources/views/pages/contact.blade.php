@@ -27,9 +27,9 @@
                     <div>
                         <p class="font-semibold mb-1">Alamat</p>
                         <p class="text-sm text-brand-gray leading-relaxed">
-                            Ruko Larisa Residence, Jl. Golf Raya No. A4,<br>
-                            Cisaranten Wetan, Kec. Cinambo,<br>
-                            Kota Bandung, Jawa Barat 40293
+                            Perum Alana Home Ruby No.7<br>
+                            Ngablak, Kroyo, Kec. Karangmalang, Kabupaten Sragen<br>
+                            Jawa Tengah 57221
                         </p>
                     </div>
                 </li>
@@ -42,7 +42,7 @@
                     <div>
                         <p class="font-semibold mb-1">Telepon / WhatsApp</p>
                         <a href="{{ $waLink }}" target="_blank" rel="noopener" class="text-sm text-brand-gray hover:text-brand-red">
-                            0851-4747-4858
+                            0851-8857-4085
                         </a>
                     </div>
                 </li>
@@ -54,7 +54,7 @@
                     </span>
                     <div>
                         <p class="font-semibold mb-1">Email</p>
-                        <p class="text-sm text-brand-gray">nipontomokiindonesia@gmail.com</p>
+                        <p class="text-sm text-brand-gray">Indonesianippontomoki@gmail.com</p>
                     </div>
                 </li>
             </ul>

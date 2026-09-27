@@ -16,11 +16,7 @@
     <section class="max-w-6xl mx-auto px-6 py-16">
         <div class="grid md:grid-cols-3 gap-8">
             @foreach ([
-                [
-                    'name' => 'Program Kaigosha Ners',
-                    'desc' => 'Pelatihan khusus untuk calon tenaga perawat lansia (kaigo) yang akan bekerja di fasilitas kesehatan Jepang, mencakup bahasa, teknik perawatan dasar, dan etika kerja.',
-                    'points' => ['Bahasa Jepang khusus kaigo', 'Praktik perawatan dasar', 'Pendampingan dokumen visa'],
-                ],
+
                 [
                     'name' => 'Program Reguler',
                     'desc' => 'Pelatihan bahasa dan keterampilan kerja umum bagi calon pekerja migran ke berbagai sektor industri di Jepang.',

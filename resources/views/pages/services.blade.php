@@ -22,7 +22,7 @@
                     'points' => ['Konsultasi pilihan bidang pekerjaan', 'Pencocokan kandidat dengan lowongan kerja', 'Pendampingan proses seleksi dan wawancara'],
             
             
-            ]
+            ],
 
                 [
                     'name' => 'Program Reguler',

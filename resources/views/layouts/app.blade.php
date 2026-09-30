@@ -45,19 +45,31 @@
 </head>
 <body class="bg-white text-brand-ink antialiased">
 
-    {{-- ============ NAVBAR ============ --}}
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-ink/5">
-        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
-            <a href="{{ route('beranda') }}" class="flex items-center gap-3">
-                <span class="relative inline-flex h-9 w-9 items-center justify-center">
-                    <span class="absolute inset-0 rounded-full bg-brand-red"></span>
-                    <span class="relative text-white font-display font-bold text-sm">NT</span>
-                </span>
-                <span class="leading-tight">
-                    <span class="block font-display font-bold text-lg">Nippon Tomoki</span>
-                    <span class="block text-xs tracking-wide text-brand-gray -mt-0.5">Indonesia</span>
-                </span>
-            </a>
+
+
+{{-- ============ NAVBAR ============ --}}
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-ink/5">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
+
+        <a href="{{ route('beranda') }}" class="flex items-center gap-3">
+
+            {{-- LOGO --}}
+            <span class="inline-flex h-12 w-12 items-center justify-center">
+                <img
+                    src="{{ asset('image/logo.jpeg') }}"
+                    alt="Logo Nippon Tomoki"
+                    class="h-12 w-12 object-contain"
+                >
+            </span>
+
+            {{-- NAMA --}}
+            <span class="leading-tight">
+                <span class="block font-display font-bold text-lg">Nippon Tomoki</span>
+                <span class="block text-xs tracking-wide text-brand-gray -mt-0.5">Indonesia</span>
+            </span>
+
+        </a>
+
 
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
                 <a href="{{ route('beranda') }}"
@@ -131,7 +143,7 @@
             <div>
                 <h4 class="font-display font-semibold mb-4">Program Kami</h4>
                 <ul class="space-y-2 text-sm text-white/70">
-                    <li>Program Kaigosha Ners</li>
+                    <li>Program Matching Job</li>
                     <li>Program Reguler</li>
                     <li>Nihongo Gakkou</li>
                     <li>
@@ -154,7 +166,7 @@
 
         <div class="border-t border-white/10">
             <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50">
-                <p>© {{ date('Y') }} Nippon Tomoki Indonesia. Semua hak cipta dilindungi.</p>
+                <p>© {{ date('Y') }} Indonesia Nippon Tomoki. Semua hak cipta dilindungi.</p>
                 <div class="flex gap-5">
                     <a href="#" class="hover:text-white">Kebijakan Privasi</a>
                     <a href="#" class="hover:text-white">Syarat &amp; Ketentuan</a>

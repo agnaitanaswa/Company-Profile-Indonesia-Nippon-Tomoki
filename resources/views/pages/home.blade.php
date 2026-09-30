@@ -60,7 +60,7 @@
                     <p class="text-xs text-brand-gray">Program Unggulan</p>
                 </div>
                 <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg px-6 py-4 text-center">
-                    <p class="font-display text-2xl font-bold text-brand-red">100+</p>
+                    <p class="font-display text-2xl font-bold text-brand-red">45+</p>
                     <p class="text-xs text-brand-gray">Alumni Sukses</p>
                 </div>
             </div>

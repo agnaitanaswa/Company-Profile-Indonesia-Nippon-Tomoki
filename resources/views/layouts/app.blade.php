@@ -46,7 +46,6 @@
 <body class="bg-white text-brand-ink antialiased">
 
 
-
 {{-- ============ NAVBAR ============ --}}
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-ink/5">
     <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">

@@ -99,6 +99,7 @@
             <a href="{{ route('beranda') }}" class="block font-medium">Beranda</a>
             <a href="{{ route('tentang-kami') }}" class="block font-medium">Tentang Kami</a>
             <a href="{{ route('layanan') }}" class="block font-medium">Layanan</a>
+            <a href="{{ route('galeri') }}" class="block font-medium">Galeri</a>
             <a href="{{ route('kontak') }}" class="block font-medium">Kontak</a>
             <a href="{{ $waLink ?? route('konsultasi-gratis') }}" target="_blank" rel="noopener"
                class="block text-center bg-brand-red text-white font-semibold px-5 py-2.5 rounded-full">

@@ -77,6 +77,8 @@
                    class="hover:text-brand-red transition-colors {{ request()->routeIs('tentang-kami') ? 'text-brand-red' : 'text-brand-ink' }}">Tentang Kami</a>
                 <a href="{{ route('layanan') }}"
                    class="hover:text-brand-red transition-colors {{ request()->routeIs('layanan') ? 'text-brand-red' : 'text-brand-ink' }}">Layanan</a>
+                <a href="{{ route('galeri') }}"
+                   class="hover:text-brand-red transition-colors {{ request()->routeIs('galeri') ? 'text-brand-red' : 'text-brand-ink' }}">Galeri</a>          
                 <a href="{{ route('kontak') }}"
                    class="hover:text-brand-red transition-colors {{ request()->routeIs('kontak') ? 'text-brand-red' : 'text-brand-ink' }}">Kontak</a>
             </nav>
@@ -136,6 +138,7 @@
                     <li><a href="{{ route('beranda') }}" class="hover:text-brand-red">Beranda</a></li>
                     <li><a href="{{ route('tentang-kami') }}" class="hover:text-brand-red">Tentang Kami</a></li>
                     <li><a href="{{ route('layanan') }}" class="hover:text-brand-red">Layanan</a></li>
+                    <li><a href="{{ route('galeri') }}" class="hover:text-brand-red">Galeri</a></li>
                     <li><a href="{{ route('kontak') }}" class="hover:text-brand-red">Kontak</a></li>
                 </ul>
             </div>

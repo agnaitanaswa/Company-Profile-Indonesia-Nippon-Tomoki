@@ -39,7 +39,7 @@ class Controllers extends Controller
                 ['src' => 'image/musholla.jpeg', 'alt' => 'Ruang musholla'],
                 ['src' => 'image/ruangkelas.jpeg', 'alt' => 'Ruang kelas'],
                 ['src' => 'image/ngajarsatu.jpeg', 'alt' => 'Ngajar di kelas bahasa Jepang'],
-                ['src' => 'image/lpk-6.jpeg', 'alt' => 'Alumni Matching Job'],
+                ['src' => 'image/alumnimatchingjob1.jpeg', 'alt' => 'Alumni Matching Job'],
             ],
         ]);
     }

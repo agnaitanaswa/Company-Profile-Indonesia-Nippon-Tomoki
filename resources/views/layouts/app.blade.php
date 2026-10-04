@@ -115,81 +115,210 @@
         @yield('content')
     </main>
 
-    {{-- ============ FOOTER ============ --}}
-        <footer class="bg-brand-ink text-white mt-24">
+   {{-- ============ FOOTER ============ --}}
+<footer class="bg-brand-ink text-white mt-24">
 
-          <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {{-- ==================================================
-             KOLOM 1 - LOGO & DESKRIPSI
+             KOLOM 1 - BRAND
         =================================================== --}}
         <div>
 
             {{-- Logo + Nama Brand --}}
             <div class="flex items-center gap-3 mb-4">
 
-                {{-- Logo Bulat --}}
-                <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
+                {{-- Logo Nippon Tomoki --}}
+                <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center">
                     <img
                         src="{{ asset('image/logo.jpeg') }}"
                         alt="Logo Nippon Tomoki"
-                        class="h-full w-full rounded-full object-cover"
+                        class="h-12 w-12 object-contain"
                     >
                 </span>
 
                 {{-- Nama Brand --}}
-                <span class="font-display font-bold leading-tight">
+                <span class="font-display font-bold text-base leading-tight">
                     Nippon Tomoki Indonesia
                 </span>
 
             </div>
 
-            <div>
-                <h4 class="font-display font-semibold mb-4">Menu Utama</h4>
-                <ul class="space-y-2 text-sm text-white/70">
-                    <li><a href="{{ route('beranda') }}" class="hover:text-brand-red">Beranda</a></li>
-                    <li><a href="{{ route('tentang-kami') }}" class="hover:text-brand-red">Tentang Kami</a></li>
-                    <li><a href="{{ route('layanan') }}" class="hover:text-brand-red">Layanan</a></li>
-                    <li><a href="{{ route('galeri') }}" class="hover:text-brand-red">Galeri</a></li>
-                    <li><a href="{{ route('kontak') }}" class="hover:text-brand-red">Kontak</a></li>
-                </ul>
-            </div>
+            {{-- Deskripsi --}}
+            <p class="text-sm text-white/60 leading-relaxed">
+                Lembaga pelatihan yang unggul dalam mencetak lulusan tenaga kerja
+                yang profesional dan berkepribadian, siap bersaing di pasar global.
+            </p>
 
-            <div>
-                <h4 class="font-display font-semibold mb-4">Program Kami</h4>
-                <ul class="space-y-2 text-sm text-white/70">
-                    <li>Program Matching Job</li>
-                    <li>Program Reguler</li>
-                    <li>Nihongo Gakkou</li>
-                    <li>
-                        <a href="{{ $waLink ?? route('konsultasi-gratis') }}" target="_blank" rel="noopener" class="hover:text-brand-red">
-                            Konsultasi Gratis
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-display font-semibold mb-4">Kontak Kami</h4>
-                <ul class="space-y-3 text-sm text-white/70">
-                    <li>Perum Alana Home Ruby No.7, Ngablak, Kroyo, Kec. Karangmalang, Kabupaten Sragen, Jawa Tengah 57221</li>
-                    <li>0851-8857-4085</li>
-                    <li>Indonesianippontomoki@gmail.com</li>
-                </ul>
-            </div>
         </div>
 
-        <div class="border-t border-white/10">
-            <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50">
-                <p>© {{ date('Y') }} Indonesia Nippon Tomoki. Semua hak cipta dilindungi.</p>
-                <div class="flex gap-5">
-                    <a href="#" class="hover:text-white">Kebijakan Privasi</a>
-                    <a href="#" class="hover:text-white">Syarat &amp; Ketentuan</a>
-                    <a href="#" class="hover:text-white">FAQ</a>
-                </div>
-            </div>
+
+        {{-- ==================================================
+             KOLOM 2 - MENU UTAMA
+        =================================================== --}}
+        <div>
+
+            <h3 class="font-display font-bold text-base mb-5">
+                Menu Utama
+            </h3>
+
+            <ul class="space-y-3 text-sm text-white/60">
+
+                <li>
+                    <a
+                        href="{{ route('beranda') }}"
+                        class="hover:text-white transition"
+                    >
+                        Beranda
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{ route('tentang-kami') }}"
+                        class="hover:text-white transition"
+                    >
+                        Tentang Kami
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{ route('layanan') }}"
+                        class="hover:text-white transition"
+                    >
+                        Layanan
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{ route('galeri') }}"
+                        class="hover:text-white transition"
+                    >
+                        Galeri
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{ route('kontak') }}"
+                        class="hover:text-white transition"
+                    >
+                        Kontak
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
-    </footer>
+
+
+        {{-- ==================================================
+             KOLOM 3 - PROGRAM KAMI
+        =================================================== --}}
+        <div>
+
+            <h3 class="font-display font-bold text-base mb-5">
+                Program Kami
+            </h3>
+
+            <ul class="space-y-3 text-sm text-white/60">
+
+                <li>
+                    <a
+                        href="{{ route('layanan') }}"
+                        class="hover:text-white transition"
+                    >
+                        Program Matching Job
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{ route('layanan') }}"
+                        class="hover:text-white transition"
+                    >
+                        Program Reguler
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{ route('layanan') }}"
+                        class="hover:text-white transition"
+                    >
+                        Program Nihongo Gakkou
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        {{-- ==================================================
+             KOLOM 4 - INFORMASI
+        =================================================== --}}
+        <div>
+
+            <h3 class="font-display font-bold text-base mb-5">
+                Informasi
+            </h3>
+
+            <ul class="space-y-3 text-sm text-white/60">
+
+                <li>
+                    <a
+                        href="#"
+                        class="hover:text-white transition"
+                    >
+                        Kebijakan Privasi
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="hover:text-white transition"
+                    >
+                        Syarat & Ketentuan
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#"
+                        class="hover:text-white transition"
+                    >
+                        FAQ
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    {{-- ==================================================
+         COPYRIGHT
+    =================================================== --}}
+    <div class="border-t border-white/10">
+
+        <div class="max-w-6xl mx-auto px-6 py-5">
+
+            <p class="text-xs text-white/50 text-center">
+                &copy; {{ date('Y') }} Indonesia Nippon Tomoki.
+                Semua hak cipta dilindungi.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
 
     {{-- Floating WhatsApp button, selalu terlihat --}}
     <a href="{{ $waLink ?? route('konsultasi-gratis') }}" target="_blank" rel="noopener"

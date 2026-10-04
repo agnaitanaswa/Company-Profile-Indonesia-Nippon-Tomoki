@@ -30,7 +30,7 @@ class Controllers extends Controller
    // Halaman Galeri
 public function galeri(): View
 {
-    return view('galeri', [
+    return view('pages.galeri', [
         'waLink' => $this->buildWaLink(
             'Halo, saya ingin konsultasi gratis mengenai program pelatihan di Nippon Tomoki Indonesia.'
         ),

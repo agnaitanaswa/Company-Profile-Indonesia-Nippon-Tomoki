@@ -116,34 +116,32 @@
     </main>
 
     {{-- ============ FOOTER ============ --}}
-    <footer class="bg-brand-ink text-white mt-24">
-        <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
-            <div>
-                <div class="flex items-center gap-3 mb-4">
-                    
-           {{-- LOGO --}}
-                <div class="flex items-center gap-3">
+        <footer class="bg-brand-ink text-white mt-24">
 
-             {{-- Logo Nippon Tomoki --}}
-                <span class="inline-flex h-12 w-12 items-center justify-center">
-                  <img
-            src="{{ asset('image/logo.jpeg') }}"
-             alt="Logo Nippon Tomoki"
-            class="h-12 w-12 object-contain"
-                >
-                    </span>
+          <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
 
-            {{-- Nama Brand --}}
-    <span class="font-display font-bold">
-        Nippon Tomoki Indonesia
-    </span>
+        {{-- ==================================================
+             KOLOM 1 - LOGO & DESKRIPSI
+        =================================================== --}}
+        <div>
 
-</div>
+            {{-- Logo + Nama Brand --}}
+            <div class="flex items-center gap-3 mb-4">
 
-<p class="text-sm text-white/60 leading-relaxed">
-    Lembaga pelatihan yang unggul dalam mencetak lulusan tenaga kerja
-    yang profesional dan berkepribadian, siap bersaing di pasar global.
-</p>
+                {{-- Logo Bulat --}}
+                <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
+                    <img
+                        src="{{ asset('image/logo.jpeg') }}"
+                        alt="Logo Nippon Tomoki"
+                        class="h-full w-full rounded-full object-cover"
+                    >
+                </span>
+
+                {{-- Nama Brand --}}
+                <span class="font-display font-bold leading-tight">
+                    Nippon Tomoki Indonesia
+                </span>
+
             </div>
 
             <div>

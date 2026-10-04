@@ -36,12 +36,11 @@ public function galeri(): View
         ),
 
         'galeriImages' => [
-            ['src' => 'image/kelas.jpeg', 'alt' => 'Kelas bahasa Jepang'],
-            ['src' => 'image/kelasdua.jpeg', 'alt' => 'Praktik wawancara kerja'],
-            ['src' => 'image/km.jpeg', 'alt' => 'Kamar mandi'],
+            ['src' => 'image/kelas.jpeg', 'alt' => 'Ruang Kelas Nyaman'],
+            ['src' => 'image/kelasdua.jpeg', 'alt' => 'Belajar nyaman di kelas'],
+            ['src' => 'image/km.jpeg', 'alt' => 'Kamar mandi bersih'],
             ['src' => 'image/musholla.jpeg', 'alt' => 'Ruang musholla'],
-            ['src' => 'image/ruangkelas.jpeg', 'alt' => 'Ruang kelas'],
-            ['src' => 'image/ngajarsatu.jpeg', 'alt' => 'Ngajar di kelas bahasa Jepang'],
+            ['src' => 'image/ngajarsatu.jpeg', 'alt' => 'Kegiatan belajar mengajar '],
             ['src' => 'image/alumnimatchingjob1.jpeg', 'alt' => 'Alumni Matching Job'],
         ],
     ]);

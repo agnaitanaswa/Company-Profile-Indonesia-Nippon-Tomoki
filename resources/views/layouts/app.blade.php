@@ -120,16 +120,30 @@
         <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
             <div>
                 <div class="flex items-center gap-3 mb-4">
-                    <span class="relative inline-flex h-8 w-8 items-center justify-center">
-                        <span class="absolute inset-0 rounded-full bg-brand-red"></span>
-                        <span class="relative text-white font-display font-bold text-xs">NT</span>
+                    
+           {{-- LOGO --}}
+                <div class="flex items-center gap-3">
+
+             {{-- Logo Nippon Tomoki --}}
+                <span class="inline-flex h-12 w-12 items-center justify-center">
+                  <img
+            src="{{ asset('image/logo.jpeg') }}"
+             alt="Logo Nippon Tomoki"
+            class="h-12 w-12 object-contain"
+                >
                     </span>
-                    <span class="font-display font-bold">Nippon Tomoki Indonesia</span>
-                </div>
-                <p class="text-sm text-white/60 leading-relaxed">
-                    Lembaga pelatihan yang unggul dalam mencetak lulusan tenaga kerja
-                    yang profesional dan berkepribadian, siap bersaing di pasar global.
-                </p>
+
+            {{-- Nama Brand --}}
+    <span class="font-display font-bold">
+        Nippon Tomoki Indonesia
+    </span>
+
+</div>
+
+<p class="text-sm text-white/60 leading-relaxed">
+    Lembaga pelatihan yang unggul dalam mencetak lulusan tenaga kerja
+    yang profesional dan berkepribadian, siap bersaing di pasar global.
+</p>
             </div>
 
             <div>

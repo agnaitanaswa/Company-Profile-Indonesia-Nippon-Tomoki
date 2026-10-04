@@ -27,22 +27,25 @@ class Controllers extends Controller
         ]);
     }
 
-     // BARU: halaman Galeri
-    public function galeri(): View
-    {
-        return view('pages.gallery', [
-            'waLink' => $this->buildWaLink('Halo, saya ingin konsultasi gratis mengenai program pelatihan di Nippon Tomoki Indonesia.'),
-            'galeriImages' => [
-                ['src' => 'image/kelas.jpeg', 'alt' => 'Kelas bahasa Jepang'],
-                ['src' => 'image/kelasdua.jpeg', 'alt' => 'Praktik wawancara kerja'],
-                ['src' => 'image/km.jpeg', 'alt' => 'Kama mandi'],
-                ['src' => 'image/musholla.jpeg', 'alt' => 'Ruang musholla'],
-                ['src' => 'image/ruangkelas.jpeg', 'alt' => 'Ruang kelas'],
-                ['src' => 'image/ngajarsatu.jpeg', 'alt' => 'Ngajar di kelas bahasa Jepang'],
-                ['src' => 'image/alumnimatchingjob1.jpeg', 'alt' => 'Alumni Matching Job'],
-            ],
-        ]);
-    }
+   // Halaman Galeri
+public function galeri(): View
+{
+    return view('galeri', [
+        'waLink' => $this->buildWaLink(
+            'Halo, saya ingin konsultasi gratis mengenai program pelatihan di Nippon Tomoki Indonesia.'
+        ),
+
+        'galeriImages' => [
+            ['src' => 'image/kelas.jpeg', 'alt' => 'Kelas bahasa Jepang'],
+            ['src' => 'image/kelasdua.jpeg', 'alt' => 'Praktik wawancara kerja'],
+            ['src' => 'image/km.jpeg', 'alt' => 'Kamar mandi'],
+            ['src' => 'image/musholla.jpeg', 'alt' => 'Ruang musholla'],
+            ['src' => 'image/ruangkelas.jpeg', 'alt' => 'Ruang kelas'],
+            ['src' => 'image/ngajarsatu.jpeg', 'alt' => 'Ngajar di kelas bahasa Jepang'],
+            ['src' => 'image/alumnimatchingjob1.jpeg', 'alt' => 'Alumni Matching Job'],
+        ],
+    ]);
+}
 
 
     public function tentangKami(): View

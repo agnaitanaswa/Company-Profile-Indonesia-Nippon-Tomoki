@@ -144,7 +144,7 @@
                             </h3>
 
                             <p class="mt-2 text-sm leading-relaxed text-brand-gray">
-                                {{ $image['description'] ?? 'Dokumentasi kegiatan dan fasilitas Indonesia Nippon Tomoki.' }}
+                                {{ $image['description'] ?? 'Fasilitas dan Kegiatan di LPK Indonesia Nippon Tomoki.' }}
                             </p>
 
                         </div>

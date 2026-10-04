@@ -37,7 +37,7 @@ public function galeri(): View
 
         'galeriImages' => [
             ['src' => 'image/kelas.jpeg', 'alt' => 'Ruang Kelas Nyaman'],
-            ['src' => 'image/kelasdua.jpeg', 'alt' => 'Belajar nyaman di kelas'],
+            ['src' => 'image/kelasdua.jpeg', 'alt' => 'Ruang Kelas Nyaman'],
             ['src' => 'image/km.jpeg', 'alt' => 'Kamar mandi bersih'],
             ['src' => 'image/musholla.jpeg', 'alt' => 'Ruang musholla'],
             ['src' => 'image/ngajarsatu.jpeg', 'alt' => 'Kegiatan belajar mengajar '],

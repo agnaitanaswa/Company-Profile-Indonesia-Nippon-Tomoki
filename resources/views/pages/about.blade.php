@@ -5,16 +5,13 @@
 @section('content')
 
     <section class="bg-brand-sand">
-        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <div class="max-w-6xl mx-auto px-6 py-16">
             <img
                 src="{{ asset('image/background.png') }}"
                 alt=""
                 aria-hidden="true"
                 class="absolute inset-0 h-full w-full object-cover"
-                style="filter: blur(1px);"
-            >
-        </div>
-        <div class="max-w-6xl mx-auto px-6 py-16">
+                style="filter: blur(1px);">
             <p class="text-sm font-semibold text-brand-red mb-3">Tentang Kami</p>
             <h1 class="font-display text-4xl font-bold max-w-2xl leading-tight">
                 Lembaga pelatihan yang membentuk tenaga kerja siap Jepang

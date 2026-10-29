@@ -9,20 +9,25 @@
     <section class="relative isolate overflow-hidden bg-white">
 
         {{-- Background Jepang --}}
-        <div class="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
             <img
                 src="{{ asset('image/background.png') }}"
                 alt=""
                 aria-hidden="true"
-                class="absolute inset-0 h-full w-full object-cover object-center scale-105 blur-[3px] opacity-25"
+                class="absolute inset-0 h-full w-full object-cover object-center blur-sm opacity-30"
             >
 
-            <div class="absolute inset-0 bg-white/65"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/75 to-white/55"></div>
+            {{-- Lapisan putih agar background tidak terlalu mencolok --}}
+            <div class="absolute inset-0 bg-white/60"></div>
+
+            {{-- Gradasi untuk menjaga keterbacaan teks --}}
+            <div class="absolute inset-0 bg-gradient-to-r from-white/85 via-white/65 to-white/50"></div>
         </div>
 
+        {{-- Konten utama --}}
         <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-14 items-center">
 
+            {{-- Teks hero --}}
             <div>
                 <p class="inline-flex items-center gap-2 text-sm font-medium text-brand-red mb-5">
                     <span class="h-2 w-2 rounded-full bg-brand-red"></span>
@@ -47,6 +52,7 @@
                         class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-redDark text-white font-semibold px-7 py-3.5 rounded-full transition-colors"
                     >
                         Konsultasi Gratis
+
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-4 w-4"
@@ -72,12 +78,13 @@
                 </div>
             </div>
 
+            {{-- Foto peserta pelatihan --}}
             <div class="relative flex justify-center md:justify-end">
                 <div class="absolute -right-10 top-1/2 -translate-y-1/2 h-80 w-80 md:h-96 md:w-96 rounded-full bg-brand-red/10"></div>
 
                 <div class="absolute -right-4 top-1/2 -translate-y-1/2 h-64 w-64 md:h-72 md:w-72 rounded-full bg-brand-red/90"></div>
 
-                <div class="relative h-72 w-56 md:h-80 md:w-64 rounded-[2rem] overflow-hidden shadow-2xl bg-brand-sand flex items-end">
+                <div class="relative h-72 w-56 md:h-80 md:w-64 rounded-[2rem] overflow-hidden shadow-2xl bg-brand-sand">
                     <img
                         src="{{ asset('image/p1.png') }}"
                         alt="Peserta pelatihan Nippon Tomoki Indonesia"
@@ -93,6 +100,7 @@
     <section class="bg-brand-sand">
         <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14 items-center">
 
+            {{-- Foto instruktur --}}
             <div class="order-2 md:order-1 relative">
                 <div class="rounded-[1.5rem] overflow-hidden shadow-xl">
                     <img
@@ -113,6 +121,7 @@
                 </div>
             </div>
 
+            {{-- Deskripsi perusahaan --}}
             <div class="order-1 md:order-2">
                 <p class="text-sm font-semibold text-brand-red mb-3">
                     Tentang Nippon Tomoki Indonesia

@@ -39,7 +39,7 @@
                 <div class="absolute -right-10 top-1/2 -translate-y-1/2 h-80 w-80 md:h-96 md:w-96 rounded-full bg-brand-red/10"></div>
                 <div class="absolute -right-4 top-1/2 -translate-y-1/2 h-64 w-64 md:h-72 md:w-72 rounded-full bg-brand-red/90"></div>
                 <div class="relative h-72 w-56 md:h-80 md:w-64 rounded-[2rem] overflow-hidden shadow-2xl bg-brand-sand flex items-end">
-                    <img src="{{ asset('image/p1.jpg') }}"
+                    <img src="{{ asset('image/p1.png') }}"
                          alt="Peserta pelatihan Nippon Tomoki Indonesia"
                          class="h-full w-full object-cover">
                 </div>
@@ -52,7 +52,7 @@
         <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14 items-center">
             <div class="order-2 md:order-1 relative">
                 <div class="rounded-[1.5rem] overflow-hidden shadow-xl">
-                    <img src="{{ asset('image/p2.jpg') }}"
+                    <img src="{{ asset('image/p2.png') }}"
                          alt="Instruktur bahasa Jepang mengajar" class="w-full h-80 object-cover">
                 </div>
                 <div class="absolute -top-6 -right-6 bg-white rounded-2xl shadow-lg px-6 py-4 text-center">

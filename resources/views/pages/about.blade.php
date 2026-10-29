@@ -15,7 +15,7 @@
 
     <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-14 items-start">
         <div>
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80"
+            <img src="{{ asset('image/p1.png') }}"
                  alt="Kelas pelatihan bahasa Jepang" class="rounded-[1.5rem] w-full h-96 object-cover shadow-xl">
         </div>
         <div>

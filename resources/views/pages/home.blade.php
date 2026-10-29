@@ -16,10 +16,7 @@
                 aria-hidden="true"
                 class="absolute inset-0 h-full w-full object-cover object-center blur-sm opacity-30"
             >
-
-            {{-- Lapisan putih agar background tidak terlalu mencolok --}}
-            <div class="absolute inset-0 bg-white/60"></div>
-
+            
             {{-- Gradasi untuk menjaga keterbacaan teks --}}
             <div class="absolute inset-0 bg-gradient-to-r from-white/85 via-white/65 to-white/50"></div>
         </div>

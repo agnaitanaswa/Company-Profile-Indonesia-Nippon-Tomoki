@@ -127,10 +127,9 @@
             </div>
 
         </div>
-    </section>
+   //section
 
     {{-- TENTANG SINGKAT --}}
-    <section class="bg-brand-sand">
         <div class="mx-auto grid max-w-6xl items-center gap-14 px-6 py-20 md:grid-cols-2">
 
             {{-- Foto instruktur --}}

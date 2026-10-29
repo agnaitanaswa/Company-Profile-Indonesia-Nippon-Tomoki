@@ -18,7 +18,7 @@
             >
 
             {{-- Gradasi untuk menjaga keterbacaan teks --}}
-            <div class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/35 to-white/15"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-white/30 via-white/15 to-white/10"></div>
         </div>
 
         {{-- Konten utama --}}

@@ -1,204 +1,186 @@
 
-@extends('layouts.app')
+{{-- HERO --}}
+<section class="relative isolate overflow-hidden bg-white">
 
-@section('title', 'Nippon Tomoki Indonesia — Rencanakan Masa Depanmu Bersama Kami')
+    {{-- Background Jepang --}}
+    <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <img
+            src="{{ asset('image/background.png') }}"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+            style="filter: blur(1px);"
+        >
 
-@section('content')
+        <div class="absolute inset-0 bg-white/30"></div>
 
-    {{-- HERO --}}
-    <section class="relative isolate overflow-hidden bg-white">
+        <div
+            class="absolute inset-0"
+            style="background: linear-gradient(90deg, rgba(255,255,255,0.72), rgba(255,255,255,0.45) 55%, rgba(255,255,255,0.25));"
+        ></div>
+    </div>
 
-        {{-- Background Jepang --}}
-        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-            <img
-                src="{{ asset('image/background.png') }}"
-                alt=""
-                aria-hidden="true"
-                class="absolute inset-0 h-full w-full object-cover object-center blur-sm opacity-30"
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+        {{-- Teks utama --}}
+        <div class="text-center md:text-left md:pl-6">
+
+            <p class="inline-flex items-center justify-center md:justify-start gap-2 text-sm font-medium text-brand-red mb-5">
+                <span class="h-2 w-2 rounded-full bg-brand-red"></span>
+                Lembaga Pelatihan Bahasa &amp; Kerja Jepang
+            </p>
+
+            <h1 class="font-display text-4xl md:text-5xl lg:text-[3.4rem] font-bold leading-[1.12] mb-6">
+                Rencanakan masa depanmu bersama
+                <span class="text-brand-red">Nippon Tomoki Indonesia</span>
+            </h1>
+
+            <p class="text-brand-gray text-base md:text-lg leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+                Kami membekali calon pekerja migran dengan bahasa,
+                keterampilan, dan kesiapan mental untuk berkarir di Jepang
+                secara legal dan terarah.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+
+                <a
+                    href="{{ $waLink }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-redDark text-white font-semibold px-7 py-3.5 rounded-full transition-colors shadow-md"
+                >
+                    Konsultasi Gratis
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                    </svg>
+                </a>
+
+                <a
+                    href="{{ route('layanan') }}"
+                    class="text-brand-ink font-semibold text-sm hover:text-brand-red transition-colors"
+                >
+                    Lihat program pelatihan
+                </a>
+
+            </div>
+        </div>
+
+        {{-- Slider foto otomatis --}}
+        <div class="relative w-full min-w-0">
+
+            <div
+                id="heroSlider"
+                class="relative w-full aspect-[5/4] md:aspect-[4/3] lg:aspect-[5/4] overflow-hidden rounded-3xl shadow-xl bg-white/50"
             >
 
-            {{-- Gradasi untuk menjaga keterbacaan teks --}}
-            <div class="absolute inset-0 bg-gradient-to-r from-white/30 via-white/15 to-white/10"></div>
-        </div>
+                {{-- Foto pertama --}}
+                <img
+                    src="{{ asset('image/p1.png') }}"
+                    alt="Peserta pelatihan Nippon Tomoki Indonesia"
+                    class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
+                >
 
-        {{-- Konten utama --}}
-        <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-14 items-center">
+                {{-- Foto kedua --}}
+                <img
+                    src="{{ asset('image/p2.png') }}"
+                    alt="Kegiatan pembelajaran bahasa Jepang"
+                    class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+                >
 
-            {{-- Teks hero --}}
-            <div>
-                <p class="inline-flex items-center gap-2 text-sm font-medium text-brand-red mb-5">
-                    <span class="h-2 w-2 rounded-full bg-brand-red"></span>
-                    Lembaga Pelatihan Bahasa &amp; Kerja Jepang
-                </p>
+                {{-- Lapisan tipis agar foto menyatu dengan desain --}}
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
 
-                <h1 class="font-display text-4xl md:text-5xl font-bold leading-[1.15] mb-6">
-                    Rencanakan masa depanmu bersama
-                    <span class="text-brand-red">Nippon Tomoki Indonesia</span>
-                </h1>
+                {{-- Indikator slider --}}
+                <div class="absolute bottom-5 left-0 right-0 z-10 flex justify-center gap-2">
+                    <button
+                        type="button"
+                        class="hero-dot h-2.5 w-7 rounded-full bg-white transition-all"
+                        aria-label="Tampilkan foto pertama"
+                        aria-current="true"
+                        data-slide="0"
+                    ></button>
 
-                <p class="text-brand-gray text-lg leading-relaxed mb-9 max-w-md">
-                    Kami membekali calon pekerja migran dengan bahasa, keterampilan,
-                    dan kesiapan mental untuk berkarir di Jepang secara legal dan terarah.
-                </p>
-
-                <div class="flex flex-wrap items-center gap-4">
-                    <a
-                        href="{{ $waLink }}"
-                        target="_blank"
-                        rel="noopener"
-                        class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-redDark text-white font-semibold px-7 py-3.5 rounded-full transition-colors"
-                    >
-                        Konsultasi Gratis
-
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"
-                            />
-                        </svg>
-                    </a>
-
-                    <a
-                        href="{{ route('layanan') }}"
-                        class="text-brand-ink font-semibold text-sm hover:text-brand-red transition-colors"
-                    >
-                        Lihat program pelatihan
-                    </a>
+                    <button
+                        type="button"
+                        class="hero-dot h-2.5 w-2.5 rounded-full bg-white/60 transition-all"
+                        aria-label="Tampilkan foto kedua"
+                        aria-current="false"
+                        data-slide="1"
+                    ></button>
                 </div>
-            </div>
 
-            {{-- Foto peserta pelatihan --}}
-            <div class="relative flex justify-center md:justify-end">
-                <div class="absolute -right-10 top-1/2 -translate-y-1/2 h-80 w-80 md:h-96 md:w-96 rounded-full bg-brand-red/10"></div>
-
-                <div class="absolute -right-4 top-1/2 -translate-y-1/2 h-64 w-64 md:h-72 md:w-72 rounded-full bg-brand-red/90"></div>
-
-                <div class="relative h-72 w-56 md:h-80 md:w-64 rounded-[2rem] overflow-hidden shadow-2xl bg-brand-sand">
-                    <img
-                        src="{{ asset('image/p1.png') }}"
-                        alt="Peserta pelatihan Nippon Tomoki Indonesia"
-                        class="h-full w-full object-cover"
-                    >
-                </div>
             </div>
 
         </div>
-    </section>
 
-    {{-- TENTANG SINGKAT --}}
-    <section class="bg-brand-sand">
-        <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14 items-center">
+    </div>
+</section>
 
-            {{-- Foto instruktur --}}
-            <div class="order-2 md:order-1 relative">
-                <div class="rounded-[1.5rem] overflow-hidden shadow-xl">
-                    <img
-                        src="{{ asset('image/p2.png') }}"
-                        alt="Instruktur bahasa Jepang mengajar"
-                        class="w-full h-80 object-cover"
-                    >
-                </div>
+{{-- Slider otomatis --}}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.getElementById('heroSlider');
 
-                <div class="absolute -top-6 -right-6 bg-white rounded-2xl shadow-lg px-6 py-4 text-center">
-                    <p class="font-display text-2xl font-bold text-brand-red">3</p>
-                    <p class="text-xs text-brand-gray">Program Unggulan</p>
-                </div>
+    if (!slider || slider.dataset.initialized === 'true') {
+        return;
+    }
 
-                <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg px-6 py-4 text-center">
-                    <p class="font-display text-2xl font-bold text-brand-red">45+</p>
-                    <p class="text-xs text-brand-gray">Alumni Sukses</p>
-                </div>
-            </div>
+    slider.dataset.initialized = 'true';
 
-            {{-- Deskripsi perusahaan --}}
-            <div class="order-1 md:order-2">
-                <p class="text-sm font-semibold text-brand-red mb-3">
-                    Tentang Nippon Tomoki Indonesia
-                </p>
+    const slides = slider.querySelectorAll('.hero-slide');
+    const dots = slider.querySelectorAll('.hero-dot');
 
-                <h2 class="font-display text-3xl font-bold mb-5 leading-snug">
-                    Wujudkan impian berkarir di Jepang
-                </h2>
+    if (slides.length < 2) {
+        return;
+    }
 
-                <p class="text-brand-gray leading-relaxed mb-8">
-                    Nippon Tomoki Indonesia adalah lembaga pelatihan bahasa Jepang yang
-                    unggul dalam mencetak lulusan tenaga kerja profesional dan
-                    berkepribadian. Kami berkomitmen menghasilkan SDM yang mahir dan
-                    berdaya saing di pasar global melalui program pelatihan berbasis
-                    kompetensi.
-                </p>
+    let currentSlide = 0;
+    let autoSlide;
 
-                <div class="grid grid-cols-2 gap-6">
-                    @foreach ([
-                        [
-                            'title' => 'Siap Bersaing Global',
-                            'desc' => 'Mencetak lulusan yang siap bersaing di pasar kerja global, khususnya Jepang.'
-                        ],
-                        [
-                            'title' => 'Legal & Terpercaya',
-                            'desc' => 'Lembaga resmi yang terdaftar dan beroperasi sesuai regulasi pemerintah.'
-                        ],
-                        [
-                            'title' => 'Program Inovatif',
-                            'desc' => 'Mengembangkan program pelatihan yang inovatif dan berbasis kompetensi.'
-                        ],
-                        [
-                            'title' => 'Instruktur Berpengalaman',
-                            'desc' => 'Tim pengajar profesional yang ahli dalam pendidikan bahasa Jepang.'
-                        ],
-                    ] as $item)
-                        <div>
-                            <div class="h-9 w-9 rounded-full bg-brand-red/10 flex items-center justify-center mb-3">
-                                <span class="h-2.5 w-2.5 rounded-full bg-brand-red"></span>
-                            </div>
+    function showSlide(index) {
+        currentSlide = index;
 
-                            <p class="font-semibold text-sm mb-1">
-                                {{ $item['title'] }}
-                            </p>
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('opacity-100', i === index);
+            slide.classList.toggle('opacity-0', i !== index);
+        });
 
-                            <p class="text-sm text-brand-gray leading-relaxed">
-                                {{ $item['desc'] }}
-                            </p>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('w-7', i === index);
+            dot.classList.toggle('w-2.5', i !== index);
+            dot.classList.toggle('bg-white', i === index);
+            dot.classList.toggle('bg-white/60', i !== index);
+            dot.setAttribute('aria-current', i === index ? 'true' : 'false');
+        });
+    }
 
-        </div>
-    </section>
+    function startAutoSlide() {
+        clearInterval(autoSlide);
 
-    {{-- CTA BANNER --}}
-    <section class="bg-brand-red">
-        <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between gap-8 text-white">
+        autoSlide = setInterval(() => {
+            showSlide((currentSlide + 1) % slides.length);
+        }, 4000);
+    }
 
-            <div class="text-center md:text-left">
-                <h2 class="font-display text-2xl md:text-3xl font-bold mb-2">
-                    Siap memulai langkah pertamamu ke Jepang?
-                </h2>
+    dots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+            showSlide(Number(dot.dataset.slide));
+            startAutoSlide();
+        });
+    });
 
-                <p class="text-white/80">
-                    Konsultasi gratis, langsung terhubung dengan tim kami lewat WhatsApp.
-                </p>
-            </div>
-
-            <a
-                href="{{ $waLink }}"
-                target="_blank"
-                rel="noopener"
-                class="shrink-0 inline-flex items-center gap-2 bg-white text-brand-red font-semibold px-7 py-3.5 rounded-full hover:bg-brand-sand transition-colors"
-            >
-                Konsultasi Gratis via WhatsApp
-            </a>
-
-        </div>
-    </section>
-
-@endsection
+    showSlide(0);
+    startAutoSlide();
+});
+</script>

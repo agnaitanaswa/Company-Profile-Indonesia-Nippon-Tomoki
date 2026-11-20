@@ -42,6 +42,9 @@ public function galeri(): View
             ['src' => 'image/musholla.jpeg', 'alt' => 'Ruang musholla'],
             ['src' => 'image/ngajarsatu.jpeg', 'alt' => 'Kegiatan belajar mengajar '],
             ['src' => 'image/alumnimatchingjob1.jpeg', 'alt' => 'Alumni Matching Job'],
+            ['src' => 'image/alumnisatu.jpeg', 'alt' => 'Alumni Indonesia Nippon Tomoki'],
+            ['src' => 'image/alumnidua.jpeg', 'alt' => 'Alumni Indonesia Nippon Tomoki'],
+
         ],
     ]);
 }
